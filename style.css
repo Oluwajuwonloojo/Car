@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.car{
+    position: absolute;
+    animation-name: cab;
+    animation-duration: 1s;
+    bottom: 10%;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation: cab 8s ease-in-out infinite;
+}
+@keyframes cab {
+    0%{
+        transform: translate(0,0);
+        
+    }
+    100%{
+        transform: translate(1400px) scale(1);
+    }
+    
+}
+
+.truck{
+    position: absolute;
+    animation-name: ca;
+    animation-duration: 10s;
+    bottom: -2%;
+
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation: ca 1s ease-in-out infinite;
+}
+@keyframes ca {
+    0%{
+        transform: translate(0,0);
+        
+    }
+    100%{
+        transform: translate(-1000px) scale(1);
+    }
+    
+}
+
+.seller{
+    position: absolute;
+    animation-name: cam;
+    animation-duration: 10s;
+    bottom: 35%;
+    margin-left: 1150px;
+}
